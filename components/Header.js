@@ -1,7 +1,31 @@
 import React, { useState } from "react";
 import styles from "./Header.module.css";
 
-const WebMenu = () => <div>This is Web</div>;
+const WebMenu = () => (
+  <div className={styles.web}>
+    <div className={styles.webOption}>
+      <a href="#project">
+        <i className={`fi fi-rr-edit-alt ${styles.optionIcon}`}></i>Projects
+      </a>
+    </div>
+    <div className={styles.webOption}>
+      <a href="">
+        <i className={`fi fi-rr-laptop ${styles.optionIcon}`}></i>Skills
+      </a>
+    </div>
+    <div className={styles.webOption}>
+      <a href="">
+        <i className={`fi fi-rr-briefcase ${styles.optionIcon}`}></i>Work
+      </a>
+    </div>
+    <div className={styles.webOption}>
+      <a href="">
+        <i className={`fi fi-rr-user ${styles.optionIcon}`}></i>Contact
+      </a>
+    </div>
+  </div>
+);
+
 const MobileMenu = () => <div>This is Mobile</div>;
 
 function Header() {
