@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialData } from "../data/social";
+import { SocialData } from "../../data/social";
 import styles from "./SocialContact.module.css";
 import Image from "next/image";
 
