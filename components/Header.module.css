@@ -44,3 +44,33 @@
     font-size: 24px;
   }
 }
+
+/* || Web Menu */
+.web {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.webOption {
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 700;
+}
+
+.webOption:last-child {
+  margin-right: 0;
+}
+
+.webOption a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.optionIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}

@@ -9,17 +9,17 @@ const WebMenu = () => (
       </a>
     </div>
     <div className={styles.webOption}>
-      <a href="">
+      <a href="#skills">
         <i className={`fi fi-rr-laptop ${styles.optionIcon}`}></i>Skills
       </a>
     </div>
     <div className={styles.webOption}>
-      <a href="">
+      <a href="#work">
         <i className={`fi fi-rr-briefcase ${styles.optionIcon}`}></i>Work
       </a>
     </div>
     <div className={styles.webOption}>
-      <a href="">
+      <a href="#contact">
         <i className={`fi fi-rr-user ${styles.optionIcon}`}></i>Contact
       </a>
     </div>
