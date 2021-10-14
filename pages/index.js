@@ -3,6 +3,11 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Work from "../components/Work";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +24,23 @@ export default function Home() {
         <title>Maxwel</title>
       </Head>
       <Header />
+      <div className={styles.content}>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="work">
+          <Work />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </div>
       <Footer />
     </div>
   );
