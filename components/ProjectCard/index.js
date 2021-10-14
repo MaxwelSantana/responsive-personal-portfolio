@@ -23,13 +23,22 @@ function ProjectCard({ project }) {
             </a>
           )}
         </div>
+        <p>{project.about}</p>
+        <div className={styles.projectTags}>
+          {project.tags.map((tag) => (
+            <label className={styles.projectTag}>{tag}</label>
+          ))}
+        </div>
       </div>
-      <Image
-        src={project.image}
-        className={styles.projectPhoto}
-        width={500}
-        height={500}
-      />
+      <div className={styles.projectPhotoContainer}>
+        <Image
+          src={project.image}
+          className={styles.projectPhoto}
+          layout="fill"
+          // width={500}
+          // height={500}
+        />
+      </div>
     </div>
   );
 }
