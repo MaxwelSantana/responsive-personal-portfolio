@@ -26,7 +26,35 @@ const WebMenu = () => (
   </div>
 );
 
-const MobileMenu = () => <div>This is Mobile</div>;
+const MobileMenu = ({ isOpen, setIsOpen }) => (
+  <div className={styles.mobile}>
+    <div className={styles.closeIcon} onClick={() => setIsOpen(!isOpen)}>
+      <i className={`fi fi-rr-cross-circle`}></i>
+    </div>
+    <div className={styles.mobileOptions}>
+      <div className={styles.mobileOption}>
+        <a href="#project">
+          <i className={`fi fi-rr-edit-alt ${styles.optionIcon}`}></i>Projects
+        </a>
+      </div>
+      <div className={styles.mobileOption}>
+        <a href="#skills">
+          <i className={`fi fi-rr-laptop ${styles.optionIcon}`}></i>Skills
+        </a>
+      </div>
+      <div className={styles.mobileOption}>
+        <a href="#work">
+          <i className={`fi fi-rr-briefcase ${styles.optionIcon}`}></i>Work
+        </a>
+      </div>
+      <div className={styles.mobileOption}>
+        <a href="#contact">
+          <i className={`fi fi-rr-user ${styles.optionIcon}`}></i>Contact
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
