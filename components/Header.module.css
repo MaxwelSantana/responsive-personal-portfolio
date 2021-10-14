@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  background-color: aquamarine;
   justify-content: space-between;
   flex: 1;
   padding: 12px;
@@ -86,6 +85,7 @@
   padding: 18px 12px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 
 .closeIcon {
